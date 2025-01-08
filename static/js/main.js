@@ -1,11 +1,8 @@
-// Example: Adding interactivity to the Weather App
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("Weather App loaded!!!");
     const form = document.querySelector("form");
     const cityInput = document.querySelector("input[name='city']");
     
     form.addEventListener("submit", (event) => {
-        console.log(cityInput)
         if (cityInput.value.trim() === "") {
             event.preventDefault();
             alert("Please enter a city name!");
@@ -19,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const weatherIdNum = parseInt(weatherId, 10);
         let weatherClass = "clear-sky";
 
-        // Match weather ID ranges based on OpenWeather documentation
         if (weatherIdNum >= 200 && weatherIdNum < 300) {
             weatherClass = "thunder"; // Thunderstorm
         } else if (weatherIdNum >= 300 && weatherIdNum < 400) {

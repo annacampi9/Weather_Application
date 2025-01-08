@@ -1,9 +1,12 @@
+import os
+from dotenv import load_dotenv
 from flask import Flask, render_template, request
 import requests
 
 app = Flask(__name__)
 
-API_KEY = "d49e7db39431b066df9cb515578885d8"
+load_dotenv()
+API_KEY = os.getenv("OPENWEATHER_API_KEY")
 
 @app.route("/", methods=["GET", "POST"])
 def home():
