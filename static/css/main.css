@@ -1,0 +1,86 @@
+/* Set the background image */
+body {
+    background-image: url('../images/clear_sky.jpg');
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+body.clear-sky {
+    background-image: url("../images/clear_sky.jpg");
+}
+
+body.cloudy {
+    background-image: url("../images/cloudy.jpg");
+}
+
+body.rain {
+    background-image: url("../images/rain.jpg");
+}
+
+body.snow {
+    background-image: url("../images/snow.jpg");
+}
+
+body.thunder {
+    background-image: url("../images/thunder.jpg");
+}
+
+body.mist {
+    background-image: url("../images/mist.jpg");
+}
+
+body.default {
+    background-image: url("../images/default.jpg");
+}
+
+/* Center the app content */
+.weather-app {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent background for readability */
+    border-radius: 10px;
+    width: 50%;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Form input and button styles */
+form input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Weather info styles */
+.weather-info {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
